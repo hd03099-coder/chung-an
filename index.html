@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#5b1014">
+<meta name="description" content="청안부적 — 소망과 마음을 담은 전통 부적 디자인. 원하는 소원에 맞는 부적을 살펴보고 카카오톡으로 문의하세요.">
+<title>청안부적 | 소망을 담은 전통 부적</title>
+<style>
+:root{--wine:#5b1014;--red:#8e1e18;--gold:#d8a94e;--cream:#fff8e9;--ink:#291b16;--muted:#74645a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fffaf0;color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.65}
+a{color:inherit}.topbar{background:var(--wine);color:#fff4d6;text-align:center;padding:9px 14px;font-size:13px;letter-spacing:.08em}
+header{position:sticky;top:0;z-index:10;background:rgba(255,250,240,.96);backdrop-filter:blur(8px);border-bottom:1px solid #ead8b6}
+.nav{max-width:1120px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}.logo{width:43px;height:43px;display:grid;place-items:center;border:2px solid var(--gold);outline:1px solid var(--red);outline-offset:-5px;background:var(--wine);color:#f6d88d;font-family:serif;font-size:23px;font-weight:700}.brand strong{display:block;font-size:21px;letter-spacing:.04em;color:var(--wine)}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:.14em}
+nav{display:flex;gap:22px;align-items:center;font-size:14px}nav a{text-decoration:none;color:#51342b}nav a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--wine);color:#fff4d8!important;text-decoration:none;border:1px solid var(--gold);padding:13px 20px;border-radius:4px;font-weight:700;box-shadow:0 5px 16px #5b10141c;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px);background:var(--red)}.btn.light{background:#fff8e8;color:var(--wine)!important;border-color:#c99b43}
+.hero{max-width:1120px;margin:auto;padding:42px 22px 58px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px}
+.eyebrow{color:var(--red);font-size:13px;font-weight:800;letter-spacing:.22em}.hero h1{font-family:serif;font-size:clamp(42px,5.3vw,70px);line-height:1.17;color:var(--wine);margin:13px 0 18px;letter-spacing:.02em}.hero h1 span{display:block;color:#b57d23}.hero p{font-size:17px;color:#665147;max-width:480px;margin:0 0 25px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.hero-art{position:relative;min-height:410px;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at center,#f6e5b8 0,#f9efd9 46%,#fffaf0 72%);border:1px solid #ead4a5;padding:20px;overflow:hidden}.hero-art:before,.hero-art:after{content:"";position:absolute;inset:15px;border:1px solid #d8b45d;pointer-events:none}.hero-art:after{inset:23px;border-color:#e7d5a8}.hero-art img{position:relative;z-index:1;max-width:100%;max-height:410px;object-fit:contain;filter:drop-shadow(0 12px 16px #4a1b1b20)}
+.wish-banner{max-width:1120px;margin:0 auto 20px;position:relative;min-height:300px;overflow:hidden;background:#2e1713}
+.wish-banner img{display:block;width:100%;height:330px;object-fit:cover;object-position:center 42%}
+.wish-banner:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,9,8,.78),rgba(28,9,8,.25) 60%,transparent)}
+.wish-banner-copy{position:absolute;z-index:1;left:7%;top:50%;transform:translateY(-50%);color:#fff2d0}
+.wish-banner-copy span{font-size:12px;letter-spacing:.2em;color:#f3d58e}
+.wish-banner-copy h2{font-family:serif;font-size:clamp(27px,4vw,42px);line-height:1.3;margin:10px 0 20px}
+.section{padding:64px 22px}.section.alt{background:#f5ead4}.inner{max-width:1120px;margin:auto}.section-head{text-align:center;margin:0 auto 32px;max-width:650px}.section-head .eyebrow{margin-bottom:8px}.section h2{font-family:serif;color:var(--wine);font-size:clamp(29px,4vw,42px);line-height:1.25;margin:0 0 12px}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fffdf7;border:1px solid #e8d7b5;padding:18px;box-shadow:0 8px 24px #4d24100a}.card img{display:block;width:100%;height:280px;object-fit:contain;background:#fff;border:1px solid #f0e6d2}.card h3{color:var(--wine);font-size:20px;margin:16px 0 5px}.card p{font-size:14px;color:var(--muted);margin:0 0 15px}
+.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.promise article{text-align:center;padding:24px 18px;border:1px solid #e2c98e;background:#fff9ed}.symbol{font-family:serif;font-size:30px;color:#b77f21}.promise h3{margin:8px 0;color:var(--wine)}.promise p{font-size:14px;color:var(--muted);margin:0}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}.how article{padding:22px;border-left:3px solid var(--gold);background:#fffdf7}.how article:before{counter-increment:step;content:"0" counter(step);font-family:serif;font-size:28px;color:#b77f21}.how h3{margin:6px 0;color:var(--wine)}.how p{font-size:14px;color:var(--muted);margin:0}
+.cta{background:linear-gradient(135deg,#4b0c11,#781b18);color:#fff5df;text-align:center;padding:58px 22px}.cta h2{font-family:serif;font-size:clamp(29px,4vw,42px);margin:0 0 10px}.cta p{color:#f1dcb7;margin:0 auto 22px;max-width:600px}.cta .btn{background:#f3d58e;color:#4b0c11!important;border-color:#fff0c5}
+footer{background:#2c1714;color:#d9c8ae;padding:28px 22px;font-size:12px}.foot{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{font-size:16px;color:#f4d58d}
+.float-chat{position:fixed;right:18px;bottom:18px;z-index:20;background:#fee500;color:#261f00!important;border-radius:999px;padding:14px 18px;text-decoration:none;font-weight:800;box-shadow:0 8px 24px #0002}
+@media(max-width:760px){.nav{padding:10px 15px}.brand strong{font-size:18px}nav{gap:12px}nav a:not(.btn){display:none}nav .btn{padding:10px 12px;font-size:13px}.hero{grid-template-columns:1fr;gap:24px;padding:28px 16px 38px}.hero h1{font-size:45px}.hero p{font-size:16px}.hero-art{min-height:300px}.hero-art img{max-height:320px}.section{padding:46px 16px}.cards{grid-template-columns:1fr;gap:16px}.card img{height:300px}.promise,.how{grid-template-columns:1fr}.float-chat{right:12px;bottom:12px;padding:12px 15px}.topbar{font-size:11px}}
+</style>
+</head>
+<body>
+<div class="topbar">靑眼 · 청안부적 — 소망을 담아 정성으로</div>
+<header><div class="nav">
+<a class="brand" href="#home" aria-label="청안부적 홈"><span class="logo">靑</span><span><strong>청안부적</strong><small>CHEONG-AN TALISMAN</small></span></a>
+<nav><a href="#products">부적 살펴보기</a><a href="#guide">주문 안내</a><a class="btn" href="https://pf.kakao.com/_MbxmyK/chat" target="_blank" rel="noopener">카카오톡 문의</a></nav>
+</div></header>
+<main id="home">
+<section class="hero">
+<div><div class="eyebrow">TRADITION · WISH · 마음의 평안</div>
+<h1>소망을 담아,<span>청안부적</span></h1>
+<p>간절한 바람과 좋은 마음을 담은 전통풍 부적 디자인을 만나보세요. 원하는 소망과 상황에 맞는 부적을 살펴보고 편하게 문의하실 수 있습니다.</p>
+<div class="hero-actions"><a class="btn" href="https://pf.kakao.com/_MbxmyK/chat" target="_blank" rel="noopener">카카오톡으로 문의하기 →</a><a class="btn light" href="#products">부적 둘러보기</a></div>
+</div>
+<div class="hero-art"><img src="assets/phone-cheongan.webp" alt="청안부적 디자인이 표시된 스마트폰"></div>
+</section>
+<section class="wish-banner" aria-label="청안부적 기원 이미지">
+  <img src="assets/prayer-banner.webp" alt="전통 한복을 입고 두 손 모아 기원하는 모습">
+  <div class="wish-banner-copy"><span>靑眼 · CHEONG-AN</span><h2>마음에 품은 소망을<br>정성으로 담다</h2><a class="btn light" href="https://pf.kakao.com/_MbxmyK/chat" target="_blank" rel="noopener">상담 시작하기 →</a></div>
+</section>
+<section class="section alt" id="products"><div class="inner">
+<div class="section-head"><div class="eyebrow">CHEONG-AN COLLECTION</div><h2>마음에 담은 소망, 부적에 담다</h2><p>청안의 부적 디자인을 살펴보세요. 맞춤 제작과 상품 문의는 카카오톡으로 안내해 드립니다.</p></div>
+<div class="cards">
+<article class="card"><img src="assets/phone-cheongan.webp" alt="청안덕환 부적 디자인"><h3>청안 상징 부적</h3><p>청안의 이름과 전통적인 문양을 담은 대표 디자인입니다.</p><a class="btn" href="https://pf.kakao.com/_MbxmyK/chat" target="_blank" rel="noopener">이 상품 문의하기</a></article>
+<article class="card"><img src="assets/phone-jeonggeumhui.webp" alt="정금희 부적 디자인"><h3>맞춤 이름 부적</h3><p>이름이나 원하는 주제에 맞춘 부적 제작 가능 여부를 문의해 주세요.</p><a class="btn" href="https://pf.kakao.com/_MbxmyK/chat" target="_blank" rel="noopener">맞춤 제작 문의</a></article>
+<article class="card"><img src="assets/two-talismans.webp" alt="스마트폰에 담긴 청안 부적 두 종류"><h3>디지털 부적 디자인</h3><p>휴대폰 화면에 담아 간직할 수 있는 디지털 부적 디자인입니다.</p><a class="btn" href="https://pf.kakao.com/_MbxmyK/chat" target="_blank" rel="noopener">자세히 문의하기</a></article>
+</div></div></section>
+<section class="section"><div class="inner"><div class="section-head"><div class="eyebrow">WHY CHEONG-AN</div><h2>청안부적을 만나는 방법</h2><p>복잡하지 않게, 원하는 내용을 전하고 상담부터 시작하세요.</p></div>
+<div class="promise"><article><div class="symbol">福</div><h3>소망에 맞춘 안내</h3><p>합격, 사업, 재물, 건강 등 원하시는 주제를 알려주세요.</p></article><article><div class="symbol">心</div><h3>정성스러운 디자인</h3><p>전통 문양과 따뜻한 색감을 살린 부적 디자인을 안내합니다.</p></article><article><div class="symbol">對</div><h3>편리한 카카오 상담</h3><p>상품 종류와 제작 가능 여부를 카카오톡으로 문의할 수 있습니다.</p></article></div>
+</div></section>
+<section class="section alt" id="guide"><div class="inner"><div class="section-head"><div class="eyebrow">HOW TO ORDER</div><h2>주문 및 상담 안내</h2><p>아래 순서대로 문의해 주시면 됩니다.</p></div>
+<div class="how"><article><h3>원하는 소망 선택</h3><p>예: 합격기원, 사업번창, 재물운, 만사형통 또는 맞춤 이름 부적.</p></article><article><h3>카카오톡으로 문의</h3><p>원하는 디자인과 제작 방식, 가격 및 제공 형태를 상담합니다.</p></article><article><h3>안내 확인 후 진행</h3><p>제작 가능 여부와 일정, 전달 방식을 확인한 뒤 주문을 진행합니다.</p></article></div>
+</div></section>
+<section class="cta"><h2>원하는 소망이 있으신가요?</h2><p>청안부적에 궁금한 점이나 맞춤 제작 요청을 카카오톡으로 편하게 남겨주세요.</p><a class="btn" href="https://pf.kakao.com/_MbxmyK/chat" target="_blank" rel="noopener">청안부적 카카오톡 상담하기 ↗</a></section>
+</main>
+<footer><div class="foot"><div><strong>청안부적 靑眼</strong><br>전통의 멋에 소망을 담다</div><div>부적은 마음의 위안과 소망을 담는 상징적 디자인입니다.<br>특정한 결과나 효능을 보장하지 않습니다.</div><div>© <span id="year"></span> 청안부적</div></div></footer>
+<a class="float-chat" href="https://pf.kakao.com/_MbxmyK/chat" target="_blank" rel="noopener" aria-label="카카오톡으로 청안부적 문의">💬 카카오톡 문의</a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
